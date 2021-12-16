@@ -3,33 +3,21 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import TopNavbar from '../TopNavbar';
 import styles from './style.module.css';
 import MainPage from '../PageContainer';
-import { AuthorsAndListenersPage } from '../../Pages';
+import { AuthorsAndListenersPage, ConferencePage } from '../../Pages';
 import { Footer } from '../Footer/Footer';
 
 export const Homepage = () => {
   const routes = [
-    // {
-    //   name: 'CONFERENCE',
-    //   url: '/conference',
-    //   getPage: () => <ConferencePage />
-    // },
+    {
+      name: 'CONFERENCE',
+      url: '/conference',
+      getPage: () => <ConferencePage />
+    },
     {
       name: 'FOR AUTHORS AND LISTENERS',
       url: '/authandlist',
       getPage: () => <AuthorsAndListenersPage />
     }
-    // {
-    //   name: 'FOR REVIWERS AND SESSION ORGANIZERS',
-    //   url: '/revsandorgs'
-    // },
-    // {
-    //   name: 'CONFERENCE',
-    //   url: '/conference'
-    // },
-    // {
-    //   name: 'PEOPLE',
-    //   url: '/people'
-    // }
   ];
   return (
     <div className={styles.homePage}>

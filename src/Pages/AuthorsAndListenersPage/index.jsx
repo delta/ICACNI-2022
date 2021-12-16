@@ -1,4 +1,3 @@
-/* eslint-disable no-console */
 import React from 'react';
 import { Route, useRouteMatch } from 'react-router-dom';
 import PageContainer from '../../components/PageContainer';
@@ -69,7 +68,6 @@ const AuthorsAndListenersPage = () => {
       {link.content}
     </Route>
   ));
-  console.log(sidebarLinks);
   return <PageContainer sidebarLinks={sidebarLinks} Content={Content} />;
 };
 

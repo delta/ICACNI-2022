@@ -1,31 +1,44 @@
 import React from 'react';
-import { Route } from 'react-router-dom';
+import { Route, useRouteMatch } from 'react-router-dom';
 import PageContainer from '../../components/PageContainer';
 // import styles from './style.module.css';
 
 const ConferencePage = () => {
+  const { path, url } = useRouteMatch();
   const sidebarLinks = [
     {
       name: 'KEYNOTE LECTURES',
-      to: 'keynotelectures',
-      path: 'keynotelectures',
+      to: `${url}/keynotelectures`
+    },
+    {
+      name: 'VENUE',
+      to: `${url}/venue`
+    },
+    {
+      name: 'CALL FOR 8TH ICANI 2020',
+      to: `${url}/callfor2020`
+    }
+  ];
+  const Content = [
+    {
+      name: 'KEYNOTE LECTURES',
+      path: `${path}/keynotelectures`,
       content: <div>KEYNOTE LECTURES</div>
     },
     {
       name: 'VENUE',
-      to: 'venue',
-      path: 'venue',
+      path: `${path}/venue`,
       content: <div>VENUE</div>
     },
     {
       name: 'CALL FOR 8TH ICANI 2020',
-      to: 'callfor2020',
-      path: 'callfor2020',
+      path: `${path}/callfor2020`,
       content: <div>CALL FOR 8TH ICANI 2020</div>
     }
-  ];
-  const Content = sidebarLinks.map((link) => (
-    <Route path={link.path}>{link.content}</Route>
+  ].map((link) => (
+    <Route key={link.path} path={link.path}>
+      {link.content}
+    </Route>
   ));
   return <PageContainer sidebarLinks={sidebarLinks} Content={Content} />;
 };
