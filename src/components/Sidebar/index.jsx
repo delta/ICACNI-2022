@@ -1,6 +1,3 @@
-/* eslint-disable no-console */
-/* eslint-disable react/prop-types */
-/* eslint-disable arrow-body-style */
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import styles from './styles.module.css';

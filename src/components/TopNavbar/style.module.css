@@ -1,5 +1,3 @@
-/* stylelint-disable selector-id-pattern */
-/* stylelint-disable selector-class-pattern */
 .navbar,
 .header {
   width: 100%;
@@ -13,6 +11,8 @@
   font-family: Montserrat, Arial, sans-serif;
   font-weight: 300;
   font-size: 10px;
+
+  /* justify-content: space-between; */
 }
 
 .header {
@@ -29,10 +29,11 @@
 
 .brand {
   width: 100%;
+  display: flex;
 }
 
 .brand > img {
-  height: 100px;
+  max-height: 100px;
 }
 
 .xsTopNavElems {

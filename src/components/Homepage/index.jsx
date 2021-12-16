@@ -22,7 +22,7 @@ export const Homepage = () => {
   return (
     <div className={styles.homePage}>
       <Router>
-        <div className={styles.TopNavBarContainer}>
+        <div className={styles.topNavBarContainer}>
           <TopNavbar />
         </div>
         <div className={styles.container}>
