@@ -1,0 +1,10 @@
+/* stylelint-disable selector-class-pattern */
+.sideBarContainer {
+  width: 30%;
+  height: 100%;
+}
+
+.contentContainer {
+  width: 70%;
+  height: 100%;
+}
