@@ -2,8 +2,14 @@ import React from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import TopNavbar from '../TopNavbar';
 import styles from './style.module.css';
-import MainPage from '../PageContainer';
-import { AuthorsAndListenersPage, ConferencePage } from '../../Pages';
+import MainPage from '../MainPage';
+import {
+  AuthorsAndListenersPage,
+  ConferencePage,
+  RewsAndOrgsPage,
+  PeoplePage,
+  PastConferencesPage
+} from '../../Pages';
 import { Footer } from '../Footer/Footer';
 
 export const Homepage = () => {
@@ -17,6 +23,21 @@ export const Homepage = () => {
       name: 'FOR AUTHORS AND LISTENERS',
       url: '/authandlist',
       getPage: () => <AuthorsAndListenersPage />
+    },
+    {
+      name: 'FOR REVIEWERS AMD SESSION ORGANIZERS',
+      url: '/revsandorgs',
+      getPage: () => <RewsAndOrgsPage />
+    },
+    {
+      name: 'PEOPLE',
+      url: '/people',
+      getPage: () => <PeoplePage />
+    },
+    {
+      name: 'PAST CONFERENCES',
+      url: '/pastconferences',
+      getPage: () => <PastConferencesPage />
     }
   ];
   return (
