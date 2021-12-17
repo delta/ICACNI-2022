@@ -35,6 +35,11 @@ const PastConferencePage = () => {
   const Content = [
     {
       name: 'ICANI2019',
+      path: `${path}`,
+      content: <div>ICANI2018</div>
+    },
+    {
+      name: 'ICANI2019',
       path: `${path}/icani2019`,
       content: <div>ICANI2018</div>
     },
