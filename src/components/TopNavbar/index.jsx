@@ -51,19 +51,19 @@ const TopNavbar = () => {
             id="responsive-navbar-nav"
           >
             <Nav className="justify-content-end">
-              <Nav.Link className={styles.colorWhite} onClick={() => history.push('/conference')}>
+              <Nav.Link className={styles.navLinks} onClick={() => history.push('/conference')}>
                 CONFERENCE
               </Nav.Link>
-              <Nav.Link className={styles.colorWhite} onClick={() => history.push('/authandlist')}>
+              <Nav.Link className={styles.navLinks} onClick={() => history.push('/authandlist')}>
                 FOR AUTHORS AND LISTENERS
               </Nav.Link>
-              <Nav.Link className={styles.colorWhite} onClick={() => history.push('/revsandorgs')}>
+              <Nav.Link className={styles.navLinks} onClick={() => history.push('/revsandorgs')}>
                 FOR REVIWERS AND SESSION ORGANIZERS
               </Nav.Link>
-              <Nav.Link className={styles.colorWhite} onClick={() => history.push('/people')}>
+              <Nav.Link className={styles.navLinks} onClick={() => history.push('/people')}>
                 PEOPLE
               </Nav.Link>
-              <Nav.Link className={styles.colorWhite} onClick={() => history.push('/pastconference')}>
+              <Nav.Link className={styles.navLinks} onClick={() => history.push('/pastconferences')}>
                 PAST CONFERENCES
               </Nav.Link>
             </Nav>

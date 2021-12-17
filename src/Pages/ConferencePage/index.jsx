@@ -40,7 +40,7 @@ const ConferencePage = () => {
       {link.content}
     </Route>
   ));
-  return <PageContainer sidebarLinks={sidebarLinks} Content={Content} />;
+  return <PageContainer title="CONFERENCE" sidebarLinks={sidebarLinks} Content={Content} />;
 };
 
 export default ConferencePage;
